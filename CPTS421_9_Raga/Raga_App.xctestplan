@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "08E422A5-5B4F-4B9B-B213-53D4F563E266",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Raga_App.xcodeproj",
+      "identifier" : "93AA720429943595005CBA08",
+      "name" : "Raga_App"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Raga_App.xcodeproj",
+        "identifier" : "65C584542AD6207200C692F8",
+        "name" : "Raga_AppUITests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Raga_App.xcodeproj",
+        "identifier" : "65C5849D2AD6510400C692F8",
+        "name" : "Raga_App UnitTests"
+      }
+    }
+  ],
+  "version" : 1
+}

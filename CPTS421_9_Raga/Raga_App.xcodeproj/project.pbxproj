@@ -1,0 +1,1034 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B15F29C2B0DDFBD00657840 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15F29B2B0DDFBD00657840 /* ForgotPasswordView.swift */; };
+		0B1CAB2929B666FB000309B4 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1CAB2829B666FB000309B4 /* SplashScreenView.swift */; };
+		0B4848192AE9C7C300B54920 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4848182AE9C7C300B54920 /* Version.swift */; };
+		0B52B3632AD7C0E000971941 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B3622AD7C0E000971941 /* AuthenticationManager.swift */; };
+		0B52B3662AD7C10F00971941 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B3652AD7C10F00971941 /* UserManager.swift */; };
+		0B52B3762AD7C12100971941 /* SettingsViewUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B36A2AD7C12100971941 /* SettingsViewUserModel.swift */; };
+		0B52B3782AD7C12100971941 /* SignUpEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B36E2AD7C12100971941 /* SignUpEmailViewModel.swift */; };
+		0B52B3792AD7C12100971941 /* SignUpEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B36F2AD7C12100971941 /* SignUpEmailView.swift */; };
+		0B52B37A2AD7C12100971941 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B3702AD7C12100971941 /* SignInEmailView.swift */; };
+		0B52B37B2AD7C12100971941 /* SignInEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B3712AD7C12100971941 /* SignInEmailViewModel.swift */; };
+		0B52B37C2AD7C12100971941 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B3722AD7C12100971941 /* AuthenticationView.swift */; };
+		0B52B37D2AD7C12100971941 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B3742AD7C12100971941 /* ProfileView.swift */; };
+		0B52B38D2AD7C16600971941 /* DBRaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B37F2AD7C16600971941 /* DBRaga.swift */; };
+		0B52B3902AD7C16600971941 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B3822AD7C16600971941 /* Recording.swift */; };
+		0B52B3932AD7C16600971941 /* DBRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B3852AD7C16600971941 /* DBRecording.swift */; };
+		0B52B3942AD7C16600971941 /* PublicRecordings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B3862AD7C16600971941 /* PublicRecordings.swift */; };
+		0B52B3982AD7C16600971941 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52B38A2AD7C16600971941 /* DatabaseManager.swift */; };
+		0B52B39C2AD7C66B00971941 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0B52B39B2AD7C66B00971941 /* FirebaseFirestore */; };
+		0B52B39E2AD7C66B00971941 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B52B39D2AD7C66B00971941 /* FirebaseFirestoreSwift */; };
+		6578F6A02B1813DC00E22FA0 /* TopRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F69F2B1813DC00E22FA0 /* TopRight.swift */; };
+		6578F6A22B18142E00E22FA0 /* TapImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6A12B18142E00E22FA0 /* TapImage.swift */; };
+		6578F6A42B1827CA00E22FA0 /* SwaraSaveAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6A32B1827CA00E22FA0 /* SwaraSaveAlert.swift */; };
+		6578F6A62B182ACD00E22FA0 /* ShowSavedSwarasPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6A52B182ACD00E22FA0 /* ShowSavedSwarasPopover.swift */; };
+		6578F6A82B18338200E22FA0 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6A72B18338200E22FA0 /* NoteView.swift */; };
+		6578F6AA2B18345000E22FA0 /* CentSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6A92B18345000E22FA0 /* CentSliderView.swift */; };
+		6578F6AC2B1834CE00E22FA0 /* RagaRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6AB2B1834CE00E22FA0 /* RagaRect.swift */; };
+		6578F6AE2B18350400E22FA0 /* RagaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6AD2B18350400E22FA0 /* RagaListView.swift */; };
+		6578F6B02B18437900E22FA0 /* RagaCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6AF2B18437900E22FA0 /* RagaCategoryView.swift */; };
+		6578F6B52B1846A900E22FA0 /* EditableInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6B42B1846A900E22FA0 /* EditableInfoView.swift */; };
+		6578F6B72B1846BA00E22FA0 /* VadiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6B62B1846BA00E22FA0 /* VadiView.swift */; };
+		6578F6B92B1846C900E22FA0 /* RagaSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6B82B1846C900E22FA0 /* RagaSection.swift */; };
+		6578F6BB2B1846D600E22FA0 /* NormalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6BA2B1846D600E22FA0 /* NormalInfoView.swift */; };
+		6578F6BD2B1846EA00E22FA0 /* NormalRagaBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6BC2B1846EA00E22FA0 /* NormalRagaBlock.swift */; };
+		6578F6BF2B1847EF00E22FA0 /* InstrumentRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6BE2B1847EF00E22FA0 /* InstrumentRect.swift */; };
+		6578F6C12B18493100E22FA0 /* ScrollCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6C02B18493100E22FA0 /* ScrollCategory.swift */; };
+		6578F6C32B18497B00E22FA0 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6C22B18497B00E22FA0 /* CategoryView.swift */; };
+		6578F6C52B184CA200E22FA0 /* FavoriteRecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6C42B184CA200E22FA0 /* FavoriteRecordingView.swift */; };
+		6578F6C72B184CDC00E22FA0 /* CommunityRecordingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6C62B184CDC00E22FA0 /* CommunityRecordingPageView.swift */; };
+		6578F6C92B184D5B00E22FA0 /* RecorderViewOnline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6C82B184D5B00E22FA0 /* RecorderViewOnline.swift */; };
+		6578F6CC2B1856E500E22FA0 /* UserPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6CB2B1856E500E22FA0 /* UserPageView.swift */; };
+		6578F6CE2B18574F00E22FA0 /* DisplayUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6CD2B18574F00E22FA0 /* DisplayUsersView.swift */; };
+		6578F6D02B18579500E22FA0 /* CommunityTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6CF2B18579500E22FA0 /* CommunityTopView.swift */; };
+		6578F6D22B185A6700E22FA0 /* EditableProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6D12B185A6700E22FA0 /* EditableProfileView.swift */; };
+		6578F6D42B185AA800E22FA0 /* RegularProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6D32B185AA800E22FA0 /* RegularProfileView.swift */; };
+		6578F6D62B185B4900E22FA0 /* ReAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578F6D52B185B4900E22FA0 /* ReAuthView.swift */; };
+		65912FB02AD359C200FC1555 /* FullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65912FAF2AD359C200FC1555 /* FullScreenView.swift */; };
+		65924AEC2AF444DB00B86AEF /* NewRagaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65924AEB2AF444DB00B86AEF /* NewRagaView.swift */; };
+		659850F72ACDEC2D007D86DE /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659850F62ACDEC2D007D86DE /* NavigationBarView.swift */; };
+		659850FF2ACE15EF007D86DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 659850FE2ACE15EF007D86DE /* GoogleService-Info.plist */; };
+		659851022ACE1654007D86DE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 659851012ACE1654007D86DE /* FirebaseAuth */; };
+		659851042ACE1654007D86DE /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 659851032ACE1654007D86DE /* FirebaseFunctions */; };
+		659851062ACE1654007D86DE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 659851052ACE1654007D86DE /* FirebaseStorage */; };
+		659851142ACE16BA007D86DE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659851132ACE16BA007D86DE /* String.swift */; };
+		659885FD2AD1E79800553FB8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659885FC2AD1E79800553FB8 /* UserData.swift */; };
+		659886002AD2077800553FB8 /* RecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659885FF2AD2077800553FB8 /* RecorderView.swift */; };
+		659CBEB82AE9E07200848434 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659CBEB72AE9E07200848434 /* LoadingView.swift */; };
+		659D5F582ACCF70700B7F56B /* SwaraButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D5F572ACCF70700B7F56B /* SwaraButtonView.swift */; };
+		659D5F5A2ACCFE6700B7F56B /* SwaraSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D5F592ACCFE6700B7F56B /* SwaraSelectorView.swift */; };
+		659D5F5C2ACD04FF00B7F56B /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D5F5B2ACD04FF00B7F56B /* SliderView.swift */; };
+		659D5F5E2ACD0C8400B7F56B /* SliderPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D5F5D2ACD0C8400B7F56B /* SliderPageView.swift */; };
+		659D5F602ACD0F8900B7F56B /* PresetPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D5F5F2ACD0F8900B7F56B /* PresetPageView.swift */; };
+		659D5F622ACD100400B7F56B /* PresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D5F612ACD100400B7F56B /* PresetView.swift */; };
+		659D5F642ACD134900B7F56B /* PlayPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D5F632ACD134900B7F56B /* PlayPageView.swift */; };
+		659D5F662ACD251A00B7F56B /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D5F652ACD251A00B7F56B /* Preset.swift */; };
+		659EB7AB2B01688A005DD2BA /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659EB7AA2B016889005DD2BA /* CommunityView.swift */; };
+		659EB7AD2B0188FC005DD2BA /* CommunityDBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659EB7AC2B0188FC005DD2BA /* CommunityDBHandler.swift */; };
+		659EB7AF2B06CD99005DD2BA /* RagaInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659EB7AE2B06CD99005DD2BA /* RagaInfoView.swift */; };
+		65A1D4C42B17D27400D17FCB /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A1D4C32B17D27400D17FCB /* RecordButton.swift */; };
+		65A950632AD20AEB0094FD97 /* RecordingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A950622AD20AEB0094FD97 /* RecordingPageView.swift */; };
+		65A950652AD23BEB0094FD97 /* InstrumentBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A950642AD23BEB0094FD97 /* InstrumentBrowser.swift */; };
+		65AB7DA82AD33F0900AD63F7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AB7DA72AD33F0900AD63F7 /* SettingsView.swift */; };
+		65AC88AF2ADF2CF5002CC400 /* UserIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC88AE2ADF2CF5002CC400 /* UserIconView.swift */; };
+		65AC88B12ADF2F2D002CC400 /* PlayButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC88B02ADF2F2D002CC400 /* PlayButtonsView.swift */; };
+		65AC88B32ADF2FE7002CC400 /* PlayButtonsOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC88B22ADF2FE7002CC400 /* PlayButtonsOverlayView.swift */; };
+		65AC88B72ADF31B6002CC400 /* FullscreenButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC88B62ADF31B6002CC400 /* FullscreenButtonView.swift */; };
+		65AC88B92ADF366A002CC400 /* MultitouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC88B82ADF366A002CC400 /* MultitouchView.swift */; };
+		65AC88BB2ADF3722002CC400 /* RectangleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC88BA2ADF3722002CC400 /* RectangleViews.swift */; };
+		65AC88BD2ADF3777002CC400 /* PlaybackHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC88BC2ADF3777002CC400 /* PlaybackHandler.swift */; };
+		65AC88BF2ADF37D5002CC400 /* RecordingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC88BE2ADF37D5002CC400 /* RecordingHandler.swift */; };
+		65C1BC8B2B2197C9009A7685 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C1BC8A2B2197C9009A7685 /* ColorExt.swift */; };
+		65C584B92AD6549300C692F8 /* TouchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C584B82AD6549300C692F8 /* TouchHandler.swift */; };
+		65C584C82AD65B2E00C692F8 /* InstrumentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C584C72AD65B2E00C692F8 /* InstrumentHandler.swift */; };
+		65D0EFCA2B0C560900736F44 /* LoginAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0EFC92B0C560900736F44 /* LoginAlertView.swift */; };
+		65D0EFCC2B0D2C4D00736F44 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0EFCB2B0D2C4D00736F44 /* KeyboardHandler.swift */; };
+		65EDB8762AC65B2B00DD99CA /* TapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EDB8752AC65B2B00DD99CA /* TapView.swift */; };
+		932C2594299E069D0014F969 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 932C2593299E069D0014F969 /* SoundpipeAudioKit */; };
+		93AA721329943595005CBA08 /* Raga_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93AA721129943595005CBA08 /* Raga_App.xcdatamodeld */; };
+		93AA721529943599005CBA08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AA721429943599005CBA08 /* Assets.xcassets */; };
+		93AA723F2994363F005CBA08 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93AA723E2994363F005CBA08 /* AudioKit */; };
+		93AA72422994365D005CBA08 /* Keyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 93AA72412994365D005CBA08 /* Keyboard */; };
+		93AA724629943716005CBA08 /* Controls in Frameworks */ = {isa = PBXBuildFile; productRef = 93AA724529943716005CBA08 /* Controls */; };
+		DF0797D429DE0E78007E2EA0 /* InstrumentConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0797D329DE0E78007E2EA0 /* InstrumentConductor.swift */; };
+		DF0797DB29DE0FA6007E2EA0 /* UIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0797DA29DE0FA6007E2EA0 /* UIData.swift */; };
+		DF0797DD29DE0FEB007E2EA0 /* AllViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0797DC29DE0FEB007E2EA0 /* AllViews.swift */; };
+		DF78464A29F07B5200EF07E2 /* KeyboardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78464929F07B5200EF07E2 /* KeyboardData.swift */; };
+		DF7A6954299F0549004228E6 /* RagaDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A6953299F0549004228E6 /* RagaDatabase.swift */; };
+		DF9B4E67299EC4D700C70FF2 /* RagaLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9B4E66299EC4D700C70FF2 /* RagaLogic.swift */; };
+		DF9D083829A2F3F000D40C09 /* Raga_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9D083729A2F3F000D40C09 /* Raga_App.swift */; };
+		DF9FA3E329A3482800DA1153 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = DF9FA3E229A3482800DA1153 /* Sounds */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B15F29B2B0DDFBD00657840 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		0B1CAB2829B666FB000309B4 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		0B4848182AE9C7C300B54920 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		0B52B35D2AD7BD6A00971941 /* Raga_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raga_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B52B3622AD7C0E000971941 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		0B52B3652AD7C10F00971941 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		0B52B36A2AD7C12100971941 /* SettingsViewUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewUserModel.swift; sourceTree = "<group>"; };
+		0B52B36E2AD7C12100971941 /* SignUpEmailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpEmailViewModel.swift; sourceTree = "<group>"; };
+		0B52B36F2AD7C12100971941 /* SignUpEmailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpEmailView.swift; sourceTree = "<group>"; };
+		0B52B3702AD7C12100971941 /* SignInEmailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
+		0B52B3712AD7C12100971941 /* SignInEmailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInEmailViewModel.swift; sourceTree = "<group>"; };
+		0B52B3722AD7C12100971941 /* AuthenticationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		0B52B3742AD7C12100971941 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0B52B37F2AD7C16600971941 /* DBRaga.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBRaga.swift; sourceTree = "<group>"; };
+		0B52B3822AD7C16600971941 /* Recording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		0B52B3852AD7C16600971941 /* DBRecording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBRecording.swift; sourceTree = "<group>"; };
+		0B52B3862AD7C16600971941 /* PublicRecordings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicRecordings.swift; sourceTree = "<group>"; };
+		0B52B38A2AD7C16600971941 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		656C2B3C2AE475AA00F1C3FA /* Sounds */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Sounds; path = Raga_App/Sounds; sourceTree = SOURCE_ROOT; };
+		656C2B3E2AE47BA600F1C3FA /* Raga_App.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Raga_App.xctestplan; sourceTree = "<group>"; };
+		656C2B3F2AE4B3BC00F1C3FA /* Test_UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_UserData.swift; sourceTree = "<group>"; };
+		656C2B412AE4B40E00F1C3FA /* Test_Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_Recording.swift; sourceTree = "<group>"; };
+		6578F69F2B1813DC00E22FA0 /* TopRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRight.swift; sourceTree = "<group>"; };
+		6578F6A12B18142E00E22FA0 /* TapImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapImage.swift; sourceTree = "<group>"; };
+		6578F6A32B1827CA00E22FA0 /* SwaraSaveAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwaraSaveAlert.swift; sourceTree = "<group>"; };
+		6578F6A52B182ACD00E22FA0 /* ShowSavedSwarasPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSavedSwarasPopover.swift; sourceTree = "<group>"; };
+		6578F6A72B18338200E22FA0 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		6578F6A92B18345000E22FA0 /* CentSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentSliderView.swift; sourceTree = "<group>"; };
+		6578F6AB2B1834CE00E22FA0 /* RagaRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagaRect.swift; sourceTree = "<group>"; };
+		6578F6AD2B18350400E22FA0 /* RagaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagaListView.swift; sourceTree = "<group>"; };
+		6578F6AF2B18437900E22FA0 /* RagaCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagaCategoryView.swift; sourceTree = "<group>"; };
+		6578F6B42B1846A900E22FA0 /* EditableInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableInfoView.swift; sourceTree = "<group>"; };
+		6578F6B62B1846BA00E22FA0 /* VadiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VadiView.swift; sourceTree = "<group>"; };
+		6578F6B82B1846C900E22FA0 /* RagaSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagaSection.swift; sourceTree = "<group>"; };
+		6578F6BA2B1846D600E22FA0 /* NormalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalInfoView.swift; sourceTree = "<group>"; };
+		6578F6BC2B1846EA00E22FA0 /* NormalRagaBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalRagaBlock.swift; sourceTree = "<group>"; };
+		6578F6BE2B1847EF00E22FA0 /* InstrumentRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentRect.swift; sourceTree = "<group>"; };
+		6578F6C02B18493100E22FA0 /* ScrollCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollCategory.swift; sourceTree = "<group>"; };
+		6578F6C22B18497B00E22FA0 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		6578F6C42B184CA200E22FA0 /* FavoriteRecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRecordingView.swift; sourceTree = "<group>"; };
+		6578F6C62B184CDC00E22FA0 /* CommunityRecordingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityRecordingPageView.swift; sourceTree = "<group>"; };
+		6578F6C82B184D5B00E22FA0 /* RecorderViewOnline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderViewOnline.swift; sourceTree = "<group>"; };
+		6578F6CB2B1856E500E22FA0 /* UserPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageView.swift; sourceTree = "<group>"; };
+		6578F6CD2B18574F00E22FA0 /* DisplayUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayUsersView.swift; sourceTree = "<group>"; };
+		6578F6CF2B18579500E22FA0 /* CommunityTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTopView.swift; sourceTree = "<group>"; };
+		6578F6D12B185A6700E22FA0 /* EditableProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableProfileView.swift; sourceTree = "<group>"; };
+		6578F6D32B185AA800E22FA0 /* RegularProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularProfileView.swift; sourceTree = "<group>"; };
+		6578F6D52B185B4900E22FA0 /* ReAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReAuthView.swift; sourceTree = "<group>"; };
+		65912FAF2AD359C200FC1555 /* FullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenView.swift; sourceTree = "<group>"; };
+		65924AEB2AF444DB00B86AEF /* NewRagaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRagaView.swift; sourceTree = "<group>"; };
+		659850F62ACDEC2D007D86DE /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		659850FE2ACE15EF007D86DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		659851132ACE16BA007D86DE /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		659885FC2AD1E79800553FB8 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		659885FF2AD2077800553FB8 /* RecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderView.swift; sourceTree = "<group>"; };
+		659CBEB72AE9E07200848434 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		659D5F572ACCF70700B7F56B /* SwaraButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwaraButtonView.swift; sourceTree = "<group>"; };
+		659D5F592ACCFE6700B7F56B /* SwaraSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwaraSelectorView.swift; sourceTree = "<group>"; };
+		659D5F5B2ACD04FF00B7F56B /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		659D5F5D2ACD0C8400B7F56B /* SliderPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPageView.swift; sourceTree = "<group>"; };
+		659D5F5F2ACD0F8900B7F56B /* PresetPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetPageView.swift; sourceTree = "<group>"; };
+		659D5F612ACD100400B7F56B /* PresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetView.swift; sourceTree = "<group>"; };
+		659D5F632ACD134900B7F56B /* PlayPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPageView.swift; sourceTree = "<group>"; };
+		659D5F652ACD251A00B7F56B /* Preset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preset.swift; sourceTree = "<group>"; };
+		659EB7AA2B016889005DD2BA /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		659EB7AC2B0188FC005DD2BA /* CommunityDBHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityDBHandler.swift; sourceTree = "<group>"; };
+		659EB7AE2B06CD99005DD2BA /* RagaInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagaInfoView.swift; sourceTree = "<group>"; };
+		65A1D4C32B17D27400D17FCB /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		65A950622AD20AEB0094FD97 /* RecordingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingPageView.swift; sourceTree = "<group>"; };
+		65A950642AD23BEB0094FD97 /* InstrumentBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentBrowser.swift; sourceTree = "<group>"; };
+		65AB7DA72AD33F0900AD63F7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		65AC88AE2ADF2CF5002CC400 /* UserIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIconView.swift; sourceTree = "<group>"; };
+		65AC88B02ADF2F2D002CC400 /* PlayButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButtonsView.swift; sourceTree = "<group>"; };
+		65AC88B22ADF2FE7002CC400 /* PlayButtonsOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButtonsOverlayView.swift; sourceTree = "<group>"; };
+		65AC88B62ADF31B6002CC400 /* FullscreenButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenButtonView.swift; sourceTree = "<group>"; };
+		65AC88B82ADF366A002CC400 /* MultitouchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitouchView.swift; sourceTree = "<group>"; };
+		65AC88BA2ADF3722002CC400 /* RectangleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleViews.swift; sourceTree = "<group>"; };
+		65AC88BC2ADF3777002CC400 /* PlaybackHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackHandler.swift; sourceTree = "<group>"; };
+		65AC88BE2ADF37D5002CC400 /* RecordingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingHandler.swift; sourceTree = "<group>"; };
+		65C1BC8A2B2197C9009A7685 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+		65C584572AD6207300C692F8 /* Raga_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raga_AppUITests.swift; sourceTree = "<group>"; };
+		65C584A02AD6510400C692F8 /* Test_UIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_UIData.swift; sourceTree = "<group>"; };
+		65C584B02AD6544000C692F8 /* Test_AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_AudioEngine.swift; sourceTree = "<group>"; };
+		65C584B22AD6545200C692F8 /* Test_RagaDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_RagaDatabase.swift; sourceTree = "<group>"; };
+		65C584B42AD6545E00C692F8 /* Test_InstrumentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_InstrumentStorage.swift; sourceTree = "<group>"; };
+		65C584B62AD6546800C692F8 /* Test_Preset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_Preset.swift; sourceTree = "<group>"; };
+		65C584B82AD6549300C692F8 /* TouchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchHandler.swift; sourceTree = "<group>"; };
+		65C584BA2AD6566300C692F8 /* Test_TouchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_TouchHandler.swift; sourceTree = "<group>"; };
+		65C584C72AD65B2E00C692F8 /* InstrumentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentHandler.swift; sourceTree = "<group>"; };
+		65C584CF2AD72E0700C692F8 /* Sounds */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Sounds; path = Raga_App/Sounds; sourceTree = SOURCE_ROOT; };
+		65D0EFC92B0C560900736F44 /* LoginAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAlertView.swift; sourceTree = "<group>"; };
+		65D0EFCB2B0D2C4D00736F44 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
+		65EDB8752AC65B2B00DD99CA /* TapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapView.swift; sourceTree = "<group>"; };
+		93AA721229943595005CBA08 /* Raga_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Raga_App.xcdatamodel; sourceTree = "<group>"; };
+		93AA721429943599005CBA08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93AA721929943599005CBA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF0797D329DE0E78007E2EA0 /* InstrumentConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentConductor.swift; sourceTree = "<group>"; };
+		DF0797DA29DE0FA6007E2EA0 /* UIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIData.swift; sourceTree = "<group>"; };
+		DF0797DC29DE0FEB007E2EA0 /* AllViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllViews.swift; sourceTree = "<group>"; };
+		DF78464929F07B5200EF07E2 /* KeyboardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardData.swift; sourceTree = "<group>"; };
+		DF7A6953299F0549004228E6 /* RagaDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagaDatabase.swift; sourceTree = "<group>"; };
+		DF9B4E66299EC4D700C70FF2 /* RagaLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagaLogic.swift; sourceTree = "<group>"; };
+		DF9D083729A2F3F000D40C09 /* Raga_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raga_App.swift; sourceTree = "<group>"; };
+		DF9FA3E229A3482800DA1153 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93AA720229943595005CBA08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AA723F2994363F005CBA08 /* AudioKit in Frameworks */,
+				659851042ACE1654007D86DE /* FirebaseFunctions in Frameworks */,
+				659851022ACE1654007D86DE /* FirebaseAuth in Frameworks */,
+				93AA724629943716005CBA08 /* Controls in Frameworks */,
+				0B52B39E2AD7C66B00971941 /* FirebaseFirestoreSwift in Frameworks */,
+				0B52B39C2AD7C66B00971941 /* FirebaseFirestore in Frameworks */,
+				659851062ACE1654007D86DE /* FirebaseStorage in Frameworks */,
+				932C2594299E069D0014F969 /* SoundpipeAudioKit in Frameworks */,
+				93AA72422994365D005CBA08 /* Keyboard in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B52B36C2AD7C12100971941 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6578F6D52B185B4900E22FA0 /* ReAuthView.swift */,
+				0B52B3722AD7C12100971941 /* AuthenticationView.swift */,
+				0B52B36E2AD7C12100971941 /* SignUpEmailViewModel.swift */,
+				0B52B36F2AD7C12100971941 /* SignUpEmailView.swift */,
+				0B52B3702AD7C12100971941 /* SignInEmailView.swift */,
+				0B52B3712AD7C12100971941 /* SignInEmailViewModel.swift */,
+				0B15F29B2B0DDFBD00657840 /* ForgotPasswordView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		0B52B37E2AD7C16600971941 /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				0B52B37F2AD7C16600971941 /* DBRaga.swift */,
+				0B4848182AE9C7C300B54920 /* Version.swift */,
+				0B52B3822AD7C16600971941 /* Recording.swift */,
+				0B52B3852AD7C16600971941 /* DBRecording.swift */,
+				0B52B3652AD7C10F00971941 /* UserManager.swift */,
+				0B52B3622AD7C0E000971941 /* AuthenticationManager.swift */,
+				0B52B3862AD7C16600971941 /* PublicRecordings.swift */,
+			);
+			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		6578F6B12B18466900E22FA0 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				DF9B4E66299EC4D700C70FF2 /* RagaLogic.swift */,
+				DF7A6953299F0549004228E6 /* RagaDatabase.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		6578F6B22B18467500E22FA0 /* ListViews */ = {
+			isa = PBXGroup;
+			children = (
+				6578F6AF2B18437900E22FA0 /* RagaCategoryView.swift */,
+				6578F6AD2B18350400E22FA0 /* RagaListView.swift */,
+			);
+			path = ListViews;
+			sourceTree = "<group>";
+		};
+		6578F6B32B18468800E22FA0 /* InfoView */ = {
+			isa = PBXGroup;
+			children = (
+				659EB7AE2B06CD99005DD2BA /* RagaInfoView.swift */,
+				6578F6B42B1846A900E22FA0 /* EditableInfoView.swift */,
+				6578F6B62B1846BA00E22FA0 /* VadiView.swift */,
+				6578F6B82B1846C900E22FA0 /* RagaSection.swift */,
+				6578F6BA2B1846D600E22FA0 /* NormalInfoView.swift */,
+				6578F6BC2B1846EA00E22FA0 /* NormalRagaBlock.swift */,
+			);
+			path = InfoView;
+			sourceTree = "<group>";
+		};
+		6578F6CA2B184D8A00E22FA0 /* Main Page */ = {
+			isa = PBXGroup;
+			children = (
+				65EDB8752AC65B2B00DD99CA /* TapView.swift */,
+				659D5F632ACD134900B7F56B /* PlayPageView.swift */,
+				65AC88B82ADF366A002CC400 /* MultitouchView.swift */,
+				65912FAF2AD359C200FC1555 /* FullScreenView.swift */,
+			);
+			path = "Main Page";
+			sourceTree = "<group>";
+		};
+		659851122ACE16BA007D86DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				659851132ACE16BA007D86DE /* String.swift */,
+				6578F69F2B1813DC00E22FA0 /* TopRight.swift */,
+				6578F6A12B18142E00E22FA0 /* TapImage.swift */,
+				65C1BC8A2B2197C9009A7685 /* ColorExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		659885F42AD0D3A500553FB8 /* Play Page */ = {
+			isa = PBXGroup;
+			children = (
+				6578F6CA2B184D8A00E22FA0 /* Main Page */,
+				659885F62AD0D3CF00553FB8 /* Audio Tuner Page */,
+				659885F72AD0D3E200553FB8 /* Preset Page */,
+				659885F52AD0D3BF00553FB8 /* Swara Page */,
+				65AC88B52ADF319B002CC400 /* Handlers */,
+				65AC88B42ADF3185002CC400 /* Buttons */,
+			);
+			path = "Play Page";
+			sourceTree = "<group>";
+		};
+		659885F52AD0D3BF00553FB8 /* Swara Page */ = {
+			isa = PBXGroup;
+			children = (
+				659D5F592ACCFE6700B7F56B /* SwaraSelectorView.swift */,
+				659D5F572ACCF70700B7F56B /* SwaraButtonView.swift */,
+				6578F6A32B1827CA00E22FA0 /* SwaraSaveAlert.swift */,
+				6578F6A52B182ACD00E22FA0 /* ShowSavedSwarasPopover.swift */,
+			);
+			path = "Swara Page";
+			sourceTree = "<group>";
+		};
+		659885F62AD0D3CF00553FB8 /* Audio Tuner Page */ = {
+			isa = PBXGroup;
+			children = (
+				659D5F5D2ACD0C8400B7F56B /* SliderPageView.swift */,
+				659D5F5B2ACD04FF00B7F56B /* SliderView.swift */,
+				6578F6A72B18338200E22FA0 /* NoteView.swift */,
+				6578F6A92B18345000E22FA0 /* CentSliderView.swift */,
+			);
+			path = "Audio Tuner Page";
+			sourceTree = "<group>";
+		};
+		659885F72AD0D3E200553FB8 /* Preset Page */ = {
+			isa = PBXGroup;
+			children = (
+				659D5F652ACD251A00B7F56B /* Preset.swift */,
+				659D5F612ACD100400B7F56B /* PresetView.swift */,
+				659D5F5F2ACD0F8900B7F56B /* PresetPageView.swift */,
+			);
+			path = "Preset Page";
+			sourceTree = "<group>";
+		};
+		659885F82AD0D3FF00553FB8 /* Raga Page */ = {
+			isa = PBXGroup;
+			children = (
+				6578F6B32B18468800E22FA0 /* InfoView */,
+				6578F6B22B18467500E22FA0 /* ListViews */,
+				6578F6B12B18466900E22FA0 /* Handlers */,
+				65924AEB2AF444DB00B86AEF /* NewRagaView.swift */,
+				6578F6AB2B1834CE00E22FA0 /* RagaRect.swift */,
+			);
+			path = "Raga Page";
+			sourceTree = "<group>";
+		};
+		659885F92AD0D45100553FB8 /* Navigation Pages */ = {
+			isa = PBXGroup;
+			children = (
+				0B1CAB2829B666FB000309B4 /* SplashScreenView.swift */,
+				659850F62ACDEC2D007D86DE /* NavigationBarView.swift */,
+				DF0797DC29DE0FEB007E2EA0 /* AllViews.swift */,
+				65AC88AE2ADF2CF5002CC400 /* UserIconView.swift */,
+				65AC88BA2ADF3722002CC400 /* RectangleViews.swift */,
+				659CBEB72AE9E07200848434 /* LoadingView.swift */,
+				65D0EFC92B0C560900736F44 /* LoginAlertView.swift */,
+				65D0EFCB2B0D2C4D00736F44 /* KeyboardHandler.swift */,
+			);
+			path = "Navigation Pages";
+			sourceTree = "<group>";
+		};
+		659885FA2AD0D4BC00553FB8 /* Instrument Page */ = {
+			isa = PBXGroup;
+			children = (
+				65A950642AD23BEB0094FD97 /* InstrumentBrowser.swift */,
+				65C584C72AD65B2E00C692F8 /* InstrumentHandler.swift */,
+				6578F6BE2B1847EF00E22FA0 /* InstrumentRect.swift */,
+				6578F6C02B18493100E22FA0 /* ScrollCategory.swift */,
+				6578F6C22B18497B00E22FA0 /* CategoryView.swift */,
+			);
+			path = "Instrument Page";
+			sourceTree = "<group>";
+		};
+		659885FE2AD2076400553FB8 /* Recording Page */ = {
+			isa = PBXGroup;
+			children = (
+				65AC88C02ADF37D8002CC400 /* Handlers */,
+				659885FF2AD2077800553FB8 /* RecorderView.swift */,
+				65A950622AD20AEB0094FD97 /* RecordingPageView.swift */,
+				6578F6C42B184CA200E22FA0 /* FavoriteRecordingView.swift */,
+				6578F6C62B184CDC00E22FA0 /* CommunityRecordingPageView.swift */,
+				6578F6C82B184D5B00E22FA0 /* RecorderViewOnline.swift */,
+			);
+			path = "Recording Page";
+			sourceTree = "<group>";
+		};
+		659EB7A92B016865005DD2BA /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				0B52B38A2AD7C16600971941 /* DatabaseManager.swift */,
+				659EB7AA2B016889005DD2BA /* CommunityView.swift */,
+				659EB7AC2B0188FC005DD2BA /* CommunityDBHandler.swift */,
+				6578F6CB2B1856E500E22FA0 /* UserPageView.swift */,
+				6578F6CD2B18574F00E22FA0 /* DisplayUsersView.swift */,
+				6578F6CF2B18579500E22FA0 /* CommunityTopView.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		65AB7DA62AD33EE500AD63F7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0B52B36A2AD7C12100971941 /* SettingsViewUserModel.swift */,
+				0B52B3742AD7C12100971941 /* ProfileView.swift */,
+				659885FC2AD1E79800553FB8 /* UserData.swift */,
+				65AB7DA72AD33F0900AD63F7 /* SettingsView.swift */,
+				6578F6D12B185A6700E22FA0 /* EditableProfileView.swift */,
+				6578F6D32B185AA800E22FA0 /* RegularProfileView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		65AC88B42ADF3185002CC400 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				65AC88B22ADF2FE7002CC400 /* PlayButtonsOverlayView.swift */,
+				65AC88B02ADF2F2D002CC400 /* PlayButtonsView.swift */,
+				65AC88B62ADF31B6002CC400 /* FullscreenButtonView.swift */,
+				65A1D4C32B17D27400D17FCB /* RecordButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		65AC88B52ADF319B002CC400 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				DF0797DA29DE0FA6007E2EA0 /* UIData.swift */,
+				DF0797D329DE0E78007E2EA0 /* InstrumentConductor.swift */,
+				DF78464929F07B5200EF07E2 /* KeyboardData.swift */,
+				65C584B82AD6549300C692F8 /* TouchHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		65AC88C02ADF37D8002CC400 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				65AC88BE2ADF37D5002CC400 /* RecordingHandler.swift */,
+				65AC88BC2ADF3777002CC400 /* PlaybackHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		65C584562AD6207300C692F8 /* Raga_AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65C584CF2AD72E0700C692F8 /* Sounds */,
+				65C584572AD6207300C692F8 /* Raga_AppUITests.swift */,
+			);
+			path = Raga_AppUITests;
+			sourceTree = "<group>";
+		};
+		65C5849F2AD6510400C692F8 /* Raga_App UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				656C2B3C2AE475AA00F1C3FA /* Sounds */,
+				65C584A02AD6510400C692F8 /* Test_UIData.swift */,
+				65C584B02AD6544000C692F8 /* Test_AudioEngine.swift */,
+				65C584B22AD6545200C692F8 /* Test_RagaDatabase.swift */,
+				65C584B42AD6545E00C692F8 /* Test_InstrumentStorage.swift */,
+				65C584B62AD6546800C692F8 /* Test_Preset.swift */,
+				65C584BA2AD6566300C692F8 /* Test_TouchHandler.swift */,
+				656C2B3F2AE4B3BC00F1C3FA /* Test_UserData.swift */,
+				656C2B412AE4B40E00F1C3FA /* Test_Recording.swift */,
+			);
+			path = "Raga_App UnitTests";
+			sourceTree = "<group>";
+		};
+		65C584BE2AD65AB200C692F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93AA71FC29943595005CBA08 = {
+			isa = PBXGroup;
+			children = (
+				656C2B3E2AE47BA600F1C3FA /* Raga_App.xctestplan */,
+				659850FE2ACE15EF007D86DE /* GoogleService-Info.plist */,
+				93AA720729943595005CBA08 /* Raga_App */,
+				65C584562AD6207300C692F8 /* Raga_AppUITests */,
+				65C5849F2AD6510400C692F8 /* Raga_App UnitTests */,
+				65C584BE2AD65AB200C692F8 /* Frameworks */,
+				0B52B35D2AD7BD6A00971941 /* Raga_App.app */,
+			);
+			sourceTree = "<group>";
+		};
+		93AA720729943595005CBA08 /* Raga_App */ = {
+			isa = PBXGroup;
+			children = (
+				659EB7A92B016865005DD2BA /* Community */,
+				0B52B37E2AD7C16600971941 /* DatabaseManager */,
+				0B52B36C2AD7C12100971941 /* Authentication */,
+				65AB7DA62AD33EE500AD63F7 /* Settings */,
+				659885FE2AD2076400553FB8 /* Recording Page */,
+				659885FA2AD0D4BC00553FB8 /* Instrument Page */,
+				659885F92AD0D45100553FB8 /* Navigation Pages */,
+				659885F82AD0D3FF00553FB8 /* Raga Page */,
+				659885F42AD0D3A500553FB8 /* Play Page */,
+				659851122ACE16BA007D86DE /* Extensions */,
+				DF9FA3E229A3482800DA1153 /* Sounds */,
+				93AA721429943599005CBA08 /* Assets.xcassets */,
+				93AA721929943599005CBA08 /* Info.plist */,
+				93AA721129943595005CBA08 /* Raga_App.xcdatamodeld */,
+				DF9D083729A2F3F000D40C09 /* Raga_App.swift */,
+			);
+			path = Raga_App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93AA720429943595005CBA08 /* Raga_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93AA72322994359A005CBA08 /* Build configuration list for PBXNativeTarget "Raga_App" */;
+			buildPhases = (
+				93AA720129943595005CBA08 /* Sources */,
+				93AA720229943595005CBA08 /* Frameworks */,
+				93AA720329943595005CBA08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Raga_App;
+			packageProductDependencies = (
+				93AA723E2994363F005CBA08 /* AudioKit */,
+				93AA72412994365D005CBA08 /* Keyboard */,
+				93AA724529943716005CBA08 /* Controls */,
+				932C2593299E069D0014F969 /* SoundpipeAudioKit */,
+				659851012ACE1654007D86DE /* FirebaseAuth */,
+				659851032ACE1654007D86DE /* FirebaseFunctions */,
+				659851052ACE1654007D86DE /* FirebaseStorage */,
+				0B52B39B2AD7C66B00971941 /* FirebaseFirestore */,
+				0B52B39D2AD7C66B00971941 /* FirebaseFirestoreSwift */,
+			);
+			productName = Raga_App;
+			productReference = 0B52B35D2AD7BD6A00971941 /* Raga_App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93AA71FD29943595005CBA08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					93AA720429943595005CBA08 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 93AA720029943595005CBA08 /* Build configuration list for PBXProject "Raga_App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93AA71FC29943595005CBA08;
+			packageReferences = (
+				93AA723D2994363F005CBA08 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				93AA72402994365D005CBA08 /* XCRemoteSwiftPackageReference "Keyboard" */,
+				93AA7243299436E4005CBA08 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
+				93AA724429943716005CBA08 /* XCRemoteSwiftPackageReference "Controls" */,
+				659851002ACE1654007D86DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 93AA71FC29943595005CBA08;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93AA720429943595005CBA08 /* Raga_App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93AA720329943595005CBA08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9FA3E329A3482800DA1153 /* Sounds in Resources */,
+				659850FF2ACE15EF007D86DE /* GoogleService-Info.plist in Resources */,
+				93AA721529943599005CBA08 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93AA720129943595005CBA08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B52B3982AD7C16600971941 /* DatabaseManager.swift in Sources */,
+				6578F6A02B1813DC00E22FA0 /* TopRight.swift in Sources */,
+				65C584B92AD6549300C692F8 /* TouchHandler.swift in Sources */,
+				6578F6AE2B18350400E22FA0 /* RagaListView.swift in Sources */,
+				659EB7AD2B0188FC005DD2BA /* CommunityDBHandler.swift in Sources */,
+				659D5F5E2ACD0C8400B7F56B /* SliderPageView.swift in Sources */,
+				65AC88B12ADF2F2D002CC400 /* PlayButtonsView.swift in Sources */,
+				6578F6D02B18579500E22FA0 /* CommunityTopView.swift in Sources */,
+				6578F6B72B1846BA00E22FA0 /* VadiView.swift in Sources */,
+				93AA721329943595005CBA08 /* Raga_App.xcdatamodeld in Sources */,
+				659851142ACE16BA007D86DE /* String.swift in Sources */,
+				0B1CAB2929B666FB000309B4 /* SplashScreenView.swift in Sources */,
+				DF9B4E67299EC4D700C70FF2 /* RagaLogic.swift in Sources */,
+				0B52B3942AD7C16600971941 /* PublicRecordings.swift in Sources */,
+				659885FD2AD1E79800553FB8 /* UserData.swift in Sources */,
+				0B52B3792AD7C12100971941 /* SignUpEmailView.swift in Sources */,
+				0B52B3632AD7C0E000971941 /* AuthenticationManager.swift in Sources */,
+				65AC88BD2ADF3777002CC400 /* PlaybackHandler.swift in Sources */,
+				659EB7AB2B01688A005DD2BA /* CommunityView.swift in Sources */,
+				65C584C82AD65B2E00C692F8 /* InstrumentHandler.swift in Sources */,
+				DF0797DB29DE0FA6007E2EA0 /* UIData.swift in Sources */,
+				0B52B3782AD7C12100971941 /* SignUpEmailViewModel.swift in Sources */,
+				DF0797DD29DE0FEB007E2EA0 /* AllViews.swift in Sources */,
+				65AB7DA82AD33F0900AD63F7 /* SettingsView.swift in Sources */,
+				65912FB02AD359C200FC1555 /* FullScreenView.swift in Sources */,
+				DF0797D429DE0E78007E2EA0 /* InstrumentConductor.swift in Sources */,
+				6578F6CC2B1856E500E22FA0 /* UserPageView.swift in Sources */,
+				6578F6C92B184D5B00E22FA0 /* RecorderViewOnline.swift in Sources */,
+				6578F6A22B18142E00E22FA0 /* TapImage.swift in Sources */,
+				659850F72ACDEC2D007D86DE /* NavigationBarView.swift in Sources */,
+				6578F6D22B185A6700E22FA0 /* EditableProfileView.swift in Sources */,
+				65C1BC8B2B2197C9009A7685 /* ColorExt.swift in Sources */,
+				659D5F622ACD100400B7F56B /* PresetView.swift in Sources */,
+				65D0EFCC2B0D2C4D00736F44 /* KeyboardHandler.swift in Sources */,
+				659D5F5C2ACD04FF00B7F56B /* SliderView.swift in Sources */,
+				DF78464A29F07B5200EF07E2 /* KeyboardData.swift in Sources */,
+				DF9D083829A2F3F000D40C09 /* Raga_App.swift in Sources */,
+				0B52B3932AD7C16600971941 /* DBRecording.swift in Sources */,
+				65AC88B32ADF2FE7002CC400 /* PlayButtonsOverlayView.swift in Sources */,
+				6578F6BB2B1846D600E22FA0 /* NormalInfoView.swift in Sources */,
+				659D5F5A2ACCFE6700B7F56B /* SwaraSelectorView.swift in Sources */,
+				659D5F642ACD134900B7F56B /* PlayPageView.swift in Sources */,
+				6578F6D62B185B4900E22FA0 /* ReAuthView.swift in Sources */,
+				65EDB8762AC65B2B00DD99CA /* TapView.swift in Sources */,
+				0B52B3662AD7C10F00971941 /* UserManager.swift in Sources */,
+				6578F6A82B18338200E22FA0 /* NoteView.swift in Sources */,
+				0B52B37A2AD7C12100971941 /* SignInEmailView.swift in Sources */,
+				0B4848192AE9C7C300B54920 /* Version.swift in Sources */,
+				65A950652AD23BEB0094FD97 /* InstrumentBrowser.swift in Sources */,
+				6578F6BD2B1846EA00E22FA0 /* NormalRagaBlock.swift in Sources */,
+				6578F6A62B182ACD00E22FA0 /* ShowSavedSwarasPopover.swift in Sources */,
+				0B52B3762AD7C12100971941 /* SettingsViewUserModel.swift in Sources */,
+				65D0EFCA2B0C560900736F44 /* LoginAlertView.swift in Sources */,
+				6578F6B52B1846A900E22FA0 /* EditableInfoView.swift in Sources */,
+				6578F6C52B184CA200E22FA0 /* FavoriteRecordingView.swift in Sources */,
+				6578F6C12B18493100E22FA0 /* ScrollCategory.swift in Sources */,
+				65AC88BF2ADF37D5002CC400 /* RecordingHandler.swift in Sources */,
+				0B52B37D2AD7C12100971941 /* ProfileView.swift in Sources */,
+				65AC88AF2ADF2CF5002CC400 /* UserIconView.swift in Sources */,
+				659886002AD2077800553FB8 /* RecorderView.swift in Sources */,
+				DF7A6954299F0549004228E6 /* RagaDatabase.swift in Sources */,
+				65A1D4C42B17D27400D17FCB /* RecordButton.swift in Sources */,
+				6578F6CE2B18574F00E22FA0 /* DisplayUsersView.swift in Sources */,
+				65A950632AD20AEB0094FD97 /* RecordingPageView.swift in Sources */,
+				65AC88BB2ADF3722002CC400 /* RectangleViews.swift in Sources */,
+				6578F6AA2B18345000E22FA0 /* CentSliderView.swift in Sources */,
+				0B52B3902AD7C16600971941 /* Recording.swift in Sources */,
+				0B15F29C2B0DDFBD00657840 /* ForgotPasswordView.swift in Sources */,
+				6578F6B02B18437900E22FA0 /* RagaCategoryView.swift in Sources */,
+				6578F6D42B185AA800E22FA0 /* RegularProfileView.swift in Sources */,
+				6578F6BF2B1847EF00E22FA0 /* InstrumentRect.swift in Sources */,
+				659D5F662ACD251A00B7F56B /* Preset.swift in Sources */,
+				659D5F602ACD0F8900B7F56B /* PresetPageView.swift in Sources */,
+				659D5F582ACCF70700B7F56B /* SwaraButtonView.swift in Sources */,
+				0B52B37C2AD7C12100971941 /* AuthenticationView.swift in Sources */,
+				659CBEB82AE9E07200848434 /* LoadingView.swift in Sources */,
+				6578F6A42B1827CA00E22FA0 /* SwaraSaveAlert.swift in Sources */,
+				0B52B38D2AD7C16600971941 /* DBRaga.swift in Sources */,
+				65AC88B72ADF31B6002CC400 /* FullscreenButtonView.swift in Sources */,
+				65AC88B92ADF366A002CC400 /* MultitouchView.swift in Sources */,
+				6578F6C32B18497B00E22FA0 /* CategoryView.swift in Sources */,
+				65924AEC2AF444DB00B86AEF /* NewRagaView.swift in Sources */,
+				6578F6B92B1846C900E22FA0 /* RagaSection.swift in Sources */,
+				6578F6AC2B1834CE00E22FA0 /* RagaRect.swift in Sources */,
+				0B52B37B2AD7C12100971941 /* SignInEmailViewModel.swift in Sources */,
+				6578F6C72B184CDC00E22FA0 /* CommunityRecordingPageView.swift in Sources */,
+				659EB7AF2B06CD99005DD2BA /* RagaInfoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		93AA72302994359A005CBA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93AA72312994359A005CBA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93AA72332994359A005CBA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26QZ6Z57ZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Raga_App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Raga Vani";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.99.99.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.upbeatlabs.ragavani;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93AA72342994359A005CBA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26QZ6Z57ZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Raga_App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Raga Vani";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.99.99.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.upbeatlabs.ragavani;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93AA720029943595005CBA08 /* Build configuration list for PBXProject "Raga_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AA72302994359A005CBA08 /* Debug */,
+				93AA72312994359A005CBA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93AA72322994359A005CBA08 /* Build configuration list for PBXNativeTarget "Raga_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AA72332994359A005CBA08 /* Debug */,
+				93AA72342994359A005CBA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		659851002ACE1654007D86DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		93AA723D2994363F005CBA08 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		93AA72402994365D005CBA08 /* XCRemoteSwiftPackageReference "Keyboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Keyboard.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		93AA7243299436E4005CBA08 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		93AA724429943716005CBA08 /* XCRemoteSwiftPackageReference "Controls" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Controls.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B52B39B2AD7C66B00971941 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659851002ACE1654007D86DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		0B52B39D2AD7C66B00971941 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659851002ACE1654007D86DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		659851012ACE1654007D86DE /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659851002ACE1654007D86DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		659851032ACE1654007D86DE /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659851002ACE1654007D86DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		659851052ACE1654007D86DE /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659851002ACE1654007D86DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		932C2593299E069D0014F969 /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93AA7243299436E4005CBA08 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
+		};
+		93AA723E2994363F005CBA08 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93AA723D2994363F005CBA08 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		93AA72412994365D005CBA08 /* Keyboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93AA72402994365D005CBA08 /* XCRemoteSwiftPackageReference "Keyboard" */;
+			productName = Keyboard;
+		};
+		93AA724529943716005CBA08 /* Controls */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93AA724429943716005CBA08 /* XCRemoteSwiftPackageReference "Controls" */;
+			productName = Controls;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		93AA721129943595005CBA08 /* Raga_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93AA721229943595005CBA08 /* Raga_App.xcdatamodel */,
+			);
+			currentVersion = 93AA721229943595005CBA08 /* Raga_App.xcdatamodel */;
+			path = Raga_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 93AA71FD29943595005CBA08 /* Project object */;
+}
